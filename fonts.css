@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'AkzidenzGroteskPro-Bold';
+    src:  local('AkzidenzGroteskPro-Bold'),
+        url('./fonts/AkzidenzGroteskPro-MdCn.woff2') format('woff2'),
+        url('./fonts/AkzidenzGroteskPro-MdCn.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+	font-family: 'PTMonoRegular';
+	src:
+		url('./fonts/PT-Mono_Regular.woff2') format('woff2'),
+		url('./fonts/PT-Mono_Regular.woff') format('woff');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTMonoBold';
+	src:
+		url('./fonts/PT-Mono_Bold.woff2') format('woff2'),
+		url('./fonts/PT-Mono_Bold.woff') format('woff');
+	font-style: normal;
+}
