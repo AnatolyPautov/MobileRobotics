@@ -5,13 +5,13 @@ const bodyLock = document.querySelector('body');
 (function () {
     const open = document.querySelector('.map-btn');
     const modal = document.querySelector('.modal-map');
-    const close = document.getElementById('close-map');
+    const closeMap = document.getElementById('close-map');
     
     open.addEventListener('click', () => {
         modal.classList.toggle('active');
         bodyLock.classList.toggle('lock');
     });
-    close.addEventListener('click', () => {
+    closeMap.addEventListener('click', () => {
         modal.classList.toggle('active');
         bodyLock.classList.toggle('lock');
     });
@@ -19,7 +19,7 @@ const bodyLock = document.querySelector('body');
 
 /*-----Modal-Contestants -----*/
 
-(function () {
+ (function () {
     const contestants = document.querySelectorAll('.contestant');
     const modal = document.querySelector('.modal-contestants');
     const close = document.getElementById('close-contestants');
