@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Расписание</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="fonts.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <div class="modal-map">
+    <div class="modal-bg">
+      <div class="modal-wrapper">
+        <div class="modal-map-container">
+          <button id='close-map' class="close">
+            <img src="./img/close-icon.svg" alt="close">
+          </button>
+          <div class="map">
+            <h3 class="title-3">Экспо-2021</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-qr">
+    <div class="modal-bg">
+      <div class="modal-wrapper">
+        <div class="modal-map-container">
+          <button id='close-qr' class="close">
+            <img src="./img/close-icon.svg" alt="close">
+          </button>
+          <div class="qrcode">
+            <h3 class="title-3">Avanti Group</h3>
+            <div class="qrcode-container">
+              <img src="img/QRCode.svg" alt="avanti group">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container">
+      <header class="space-between">
+        <a href="./index.html" class="back">
+          <img src="./img/back-icon.svg" alt="back">
+          <span>назад</span>
+        </a>
+        <button class="map-btn">карта выставки</button>
+      </header>
+      <section class="timetable">
+        <h2 class="subtitle">Расписание</h2>
+
+        <div class="timetable-swiper swiper">
+          <div class="timetable-pagination swiper-pagination"></div>
+          <div class="swiper-wrapper">
+            <div class="timetable__slide swiper-slide">
+
+              <div class="table">
+                <div class="table__row">
+                  <p class="table__item">8:30 - 9:00</p>
+                  <p class="table__item">9:00 - 9:40</p>
+                  <p class="table__item">9:40 - 12:00</p>
+                  <p class="table__item">12:00 - 14:00</p>
+                  <p class="table__item">14:00 - 16:45</p>
+                </div>
+                <div class="table__row">
+                  <div class="table__item">
+                    <p class="table__desc">Приход
+                      на площадку</p>
+                  </div>
+                  <div class="table__item">
+                    <p class="table__desc">Брифинг</p>
+                  </div>
+                  <div class="table__item">
+                    <p class="table__desc">Модуль E2</p>
+                  </div>
+                  <div class="table__item">
+                    <p class="table__desc">Обед</p>
+                  </div>
+                  <div class="table__item">
+                    <p class="table__desc">Модули C3 и E1</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modules">
+                <div class="module">
+                  <div class="module__item">E2</div>
+                  <p class="module__desc">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                    Duis mollis, est non commodo luctus.</p>
+                </div>
+                <div class="module">
+                  <div class="module__item">C2</div>
+                  <p class="module__desc">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                  </p>
+                </div>
+                <div class="module">
+                  <div class="module__item">E1</div>
+                  <p class="module__desc">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                    Duis mollis.</p>
+                </div>
+              </div>
+
+              <h2 class="subtitle">Площадки</h2>
+              <div class="places">
+
+                <div class="place">
+                  <div class="place__number">
+                    <img src="img/1.png" alt="1">
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Красноярск</p>
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Липецк</p>
+                  </div>
+                </div>
+
+                <div class="place">
+                  <div class="place__number">
+                    <img src="img/2.png" alt="2">
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Красноярск</p>
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Липецк</p>
+                  </div>
+                </div>
+
+                <div class="place">
+                  <div class="place__number">
+                    <img src="img/3.png" alt="3">
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Красноярск</p>
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Липецк</p>
+                  </div>
+                </div>
+
+                <div class="place">
+                  <div class="place__number">
+                    <img src="img/4.png" alt="4">
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Красноярск</p>
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Липецк</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="timetable__slide swiper-slide">
+
+              <div class="table">
+                <div class="table__row">
+                  <p class="table__item">8:30 - 9:00</p>
+                  <p class="table__item">9:00 - 9:40</p>
+                  <p class="table__item">9:40 - 12:00</p>
+                  <p class="table__item">12:00 - 14:00</p>
+                  <p class="table__item">14:00 - 16:45</p>
+                </div>
+                <div class="table__row">
+                  <div class="table__item">
+                    <p class="table__desc">Приход
+                      на площадку</p>
+                  </div>
+                  <div class="table__item">
+                    <p class="table__desc">Брифинг</p>
+                  </div>
+                  <div class="table__item">
+                    <p class="table__desc">Модуль E2</p>
+                  </div>
+                  <div class="table__item">
+                    <p class="table__desc">Обед</p>
+                  </div>
+                  <div class="table__item">
+                    <p class="table__desc">Модули C3 и E1</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modules">
+                <div class="module">
+                  <div class="module__item">E2</div>
+                  <p class="module__desc">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                    Duis mollis, est non commodo luctus.</p>
+                </div>
+                <div class="module">
+                  <div class="module__item">C2</div>
+                  <p class="module__desc">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                  </p>
+                </div>
+                <div class="module">
+                  <div class="module__item">E1</div>
+                  <p class="module__desc">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                    Duis mollis.</p>
+                </div>
+              </div>
+
+              <h2 class="subtitle">Площадки</h2>
+              <div class="places">
+
+                <div class="place">
+                  <div class="place__number">
+                    <img src="img/1.png" alt="1">
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Красноярск</p>
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Липецк</p>
+                  </div>
+                </div>
+
+                <div class="place">
+                  <div class="place__number">
+                    <img src="img/2.png" alt="2">
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Красноярск</p>
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Липецк</p>
+                  </div>
+                </div>
+
+                <div class="place">
+                  <div class="place__number">
+                    <img src="img/3.png" alt="3">
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Красноярск</p>
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Липецк</p>
+                  </div>
+                </div>
+
+                <div class="place">
+                  <div class="place__number">
+                    <img src="img/4.png" alt="4">
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Красноярск</p>
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Липецк</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="timetable__slide swiper-slide">
+
+              <div class="table">
+                <div class="table__row">
+                  <p class="table__item">8:30 - 9:00</p>
+                  <p class="table__item">9:00 - 9:40</p>
+                  <p class="table__item">9:40 - 12:00</p>
+                  <p class="table__item">12:00 - 14:00</p>
+                  <p class="table__item">14:00 - 16:45</p>
+                </div>
+                <div class="table__row">
+                  <div class="table__item">
+                    <p class="table__desc">Приход
+                      на площадку</p>
+                  </div>
+                  <div class="table__item">
+                    <p class="table__desc">Брифинг</p>
+                  </div>
+                  <div class="table__item">
+                    <p class="table__desc">Модуль E2</p>
+                  </div>
+                  <div class="table__item">
+                    <p class="table__desc">Обед</p>
+                  </div>
+                  <div class="table__item">
+                    <p class="table__desc">Модули C3 и E1</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modules">
+                <div class="module">
+                  <div class="module__item">E2</div>
+                  <p class="module__desc">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                    Duis mollis, est non commodo luctus.</p>
+                </div>
+                <div class="module">
+                  <div class="module__item">C2</div>
+                  <p class="module__desc">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                  </p>
+                </div>
+                <div class="module">
+                  <div class="module__item">E1</div>
+                  <p class="module__desc">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                    Duis mollis.</p>
+                </div>
+              </div>
+
+              <h2 class="subtitle">Площадки</h2>
+              <div class="places">
+
+                <div class="place">
+                  <div class="place__number">
+                    <img src="img/1.png" alt="1">
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Красноярск</p>
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Липецк</p>
+                  </div>
+                </div>
+
+                <div class="place">
+                  <div class="place__number">
+                    <img src="img/2.png" alt="2">
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Красноярск</p>
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Липецк</p>
+                  </div>
+                </div>
+
+                <div class="place">
+                  <div class="place__number">
+                    <img src="img/3.png" alt="3">
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Красноярск</p>
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Липецк</p>
+                  </div>
+                </div>
+
+                <div class="place">
+                  <div class="place__number">
+                    <img src="img/4.png" alt="4">
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Красноярск</p>
+                  </div>
+                  <div class="place__city left-line">
+                    <img src="img/emblem-1-min.jpg" alt="">
+                    <p>Липецк</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+    </div>
+    </section>
+  </div>
+
+  </div>
+  </div>
+</body>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="scripts/timetableSwiper.js"></script>
+<script src="scripts/script.js"></script>
+
+</html>

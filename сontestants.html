@@ -8,6 +8,7 @@
   <title>Конкурсанты</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="fonts.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -15,7 +16,7 @@
     <div class="modal-bg">
       <div class="modal-wrapper">
         <div class="modal-map-container">
-          <button id='close-map' class="close-map">
+          <button id='close-map' class="close">
             <img src="./img/close-icon.svg" alt="close">
           </button>
           <div class="map">
@@ -28,24 +29,117 @@
   <div class="modal-contestants">
     <div class="modal-bg">
       <div class="modal-wrapper">
-        <div class="modal-contestant-container">
-          <button id='close-contestants' class="close-map">
-            <img src="./img/close-icon.svg" alt="close">
+
+        <div class="contestants-swiper swiper">
+          <button id='close-contestants' class="close close-right">
+            <img src="img/close-icon.svg" alt="close">
           </button>
-          <div class="contestant__info">
-            <div>
-              <h3 class="title-3 contestant__info-title">Иванова татьяна николаевна</h3>
-              <p class="contestant__info-city">Санкт-Петербург</p>
-              <p class="contestant__info-age">25 лет</p>
-              <p>Санкт-Петербургский государственный университет</p>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide modal-contestant-container">
+              <div class="contestant__info">
+                <div>
+                  <h3 class="title-3 contestant__info-title">Иванова татьяна николаевна</h3>
+                  <p class="contestant__info-city">Санкт-Петербург</p>
+                  <p class="contestant__info-age">25 лет</p>
+                  <p>Санкт-Петербургский государственный университет</p>
+                </div>
+                <img src="./img/contestant-big.png" alt="contestant">
+              </div>
+              <div class="contestant__block">
+                <h4 class="contestant__block-title">Чемпионаты</h4>
+                <div class="champion">
+                  <p>🏆 Кубок мира FIS по горным лыжам</p>
+                </div>
+                <div class="champion">
+                  <p>🏆 World Baseball Classic</p>
+                  <div class="champion__top">топ 3</div>
+                </div>
+                <div class="champion">
+                  <p>🏆 ICC T20 World Cup</p>
+                </div>
+              </div>
+              <div class="contestant__block">
+                <h4 class="contestant__block-title">Награды</h4>
+                <div class="champion">
+                  <p>🥇 Приз зрительских симпатий, Токио, 2019</p>
+                </div>
+                <div class="champion">
+                  <p>🥇 Best Drunk Party Friend, USA, 2018</p>
+                </div>
+              </div>
             </div>
-            <img src="./img/contestant-big.png" alt="contestant">
-          </div>
-          <div class="contestant__block">
-            <h4 class="contestant__block-title">Чемпионаты</h4>
+
+            <div class="swiper-slide modal-contestant-container">
+              <div class="contestant__info">
+                <div>
+                  <h3 class="title-3 contestant__info-title">Иванова татьяна николаевна</h3>
+                  <p class="contestant__info-city">Санкт-Петербург</p>
+                  <p class="contestant__info-age">25 лет</p>
+                  <p>Санкт-Петербургский государственный университет</p>
+                </div>
+                <img src="./img/contestant-big.png" alt="contestant">
+              </div>
+              <div class="contestant__block">
+                <h4 class="contestant__block-title">Чемпионаты</h4>
+                <div class="champion">
+                  <p>🏆 Кубок мира FIS по горным лыжам</p>
+                </div>
+                <div class="champion">
+                  <p>🏆 World Baseball Classic</p>
+                  <div class="champion__top">топ 3</div>
+                </div>
+                <div class="champion">
+                  <p>🏆 ICC T20 World Cup</p>
+                </div>
+              </div>
+              <div class="contestant__block">
+                <h4 class="contestant__block-title">Награды</h4>
+                <div class="champion">
+                  <p>🥇 Приз зрительских симпатий, Токио, 2019</p>
+                </div>
+                <div class="champion">
+                  <p>🥇 Best Drunk Party Friend, USA, 2018</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide modal-contestant-container">
+              <div class="contestant__info">
+                <div>
+                  <h3 class="title-3 contestant__info-title">Иванова татьяна николаевна</h3>
+                  <p class="contestant__info-city">Санкт-Петербург</p>
+                  <p class="contestant__info-age">25 лет</p>
+                  <p>Санкт-Петербургский государственный университет</p>
+                </div>
+                <img src="./img/contestant-big.png" alt="contestant">
+              </div>
+              <div class="contestant__block">
+                <h4 class="contestant__block-title">Чемпионаты</h4>
+                <div class="champion">
+                  <p>🏆 Кубок мира FIS по горным лыжам</p>
+                </div>
+                <div class="champion">
+                  <p>🏆 World Baseball Classic</p>
+                  <div class="champion__top">топ 3</div>
+                </div>
+                <div class="champion">
+                  <p>🏆 ICC T20 World Cup</p>
+                </div>
+              </div>
+              <div class="contestant__block">
+                <h4 class="contestant__block-title">Награды</h4>
+                <div class="champion">
+                  <p>🥇 Приз зрительских симпатий, Токио, 2019</p>
+                </div>
+                <div class="champion">
+                  <p>🥇 Best Drunk Party Friend, USA, 2018</p>
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -328,6 +422,8 @@
     </div>
   </div>
 </body>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="scripts/contestantsSwiper.js"></script>
 <script src="scripts/modalContestants.js"></script>
 <script src="scripts/script.js"></script>
 

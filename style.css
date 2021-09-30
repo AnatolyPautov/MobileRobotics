@@ -16,13 +16,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 body{
-  color: white;
+  color: #fff;
   background: #121212;
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
   font-family: 'PTMonoRegular';
   text-transform: uppercase;
+}
+body p{
+  letter-spacing: 0.03em;
 }
 .wrapper{
   width: 1080px;
@@ -134,18 +137,18 @@ body{
   width: 1040px;
   background: #2E2E2E;
   position: relative;
-  padding: 36px 32px 36px 44px;
+  padding: 36px 32px 36px 55px;
   display: flex;
   flex-direction: column;
 }
 .map{
   height: 669px;
-  background-image: url(./img/map-min.png);
+  background-image: url(./img/map.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
 }
-.close-map{
+.close{
   position: absolute;
   content: '';
   top: -56px;
@@ -158,6 +161,7 @@ body{
   align-items: center;
   justify-content: center;
   transition: 0.3s;
+  z-index: 100;
 }
 .active{
   display: block !important;
@@ -236,7 +240,7 @@ body{
   margin-bottom: 91px;
 }
 .technicians{
-  margin-top: 141px;
+  margin-top: 100px;
   margin-bottom: 87px;
 }
 .techn-title{
@@ -244,11 +248,6 @@ body{
 }
 .techn-width{
   width: 80%
-}
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
 }
 .techn-swiper{
   width: 100%;
@@ -258,6 +257,11 @@ body{
   width: 387px !important;
   height: 528px;
   position: relative;
+}
+.techn-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 .techn-slide div{
   max-height: 137px;
@@ -414,9 +418,7 @@ body{
   display: none;
 }
 .modal-contestant-container{
-  box-sizing: border-box;
-  width: 996px;
-  height: 739px;
+  width: 996px !important;
   background: #2E2E2E;
   position: relative;
   padding: 40px 40px 40px 55px;
@@ -440,11 +442,250 @@ body{
   margin-bottom: 8px;
 }
 .contestant__block{
-
+  margin-bottom: 50px;
 }
 .contestant__block-title{
   font-family: 'PTMonoBold';
   padding-bottom: 14px;
   border-bottom: 1px solid #58585D;
 }
+.champion{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #58585D;
+  padding: 16px 0;
+  letter-spacing: 0.03em;
+}
+.champion__top{
+  width: 68px;
+  height: 24px;
+  background: #308BF4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contestants-swiper{
+  width: 100%;
+  overflow: visible !important;
+}
+.close-right{
+  right: 52px;
+}
+
 /*----Screen 4 End-------*/
+
+/*----Screen 5 Start-------*/
+
+.timetable{
+  margin-top: 80px;
+  padding-bottom: 100px;
+}
+.timetable__slide{
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+}
+.table{
+  background: #2E2E2E;
+  margin-bottom: 30px;
+}
+.table__row{
+  display: flex;
+  align-items: center;
+}
+.table__row:first-child{
+  border-bottom: 1px solid #58585D;
+}
+.table__item{
+  width: 209px;
+  height: 68px;
+  padding: 0 16px;
+  font-family: 'PTMonoBold';
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.table__item::before{
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 0;
+  width: 1px;
+  height: 36px;
+  background: #58585D;
+}
+.table__desc{
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  font-family: 'PTMonoRegular';
+}
+.table__item:last-child:before{
+  display: none;
+}
+.modules{
+  display: flex;
+  align-items: start;
+  margin-bottom: 114px;
+}
+.module{
+  width: 240px;
+  display: flex;
+  align-items: start;
+  margin-right: 57px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.module__item{
+  padding: 9px;
+  margin-right: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  border: 1px solid #58585D;
+  border-radius: 50%;
+}
+.module__desc{
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+
+.places{
+  margin-top: 70px;
+}
+.place{
+  height: 68px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.12);
+  margin-bottom: 20px;
+}
+.place:nth-child(2) .place__number{
+  background: #0605FF;
+}
+.place:nth-child(3) .place__number{
+  background: #E541F7;
+}
+.place:nth-child(4) .place__number{
+  background: #0AB77F;
+}
+.place__number{
+  background: #F05936;
+  height: 100%;
+  width: 181px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 32px;
+}
+.place__city{
+  width: 400px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+.place__city p{
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  font-family: 'PTMonoBold';
+}
+.place__city img{
+  height: 36px;
+  width: 36px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.timetable-pagination{
+  padding-top: 70px;
+  position: relative !important;
+  display: flex;
+}
+
+.timetable__bullet {
+  width: 92px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
+  margin-right: 20px;
+}
+
+.timetable__bullet_active {
+  color: #fff;
+  background: #308BF4;
+}
+/*----Screen 5 End-------*/
+
+/*----Screen 6 Start-------*/
+
+.partners{
+  margin-top: 80px;
+}
+.partners__container{
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.partner{
+  background: #2E2E2E;
+  padding: 35px 40px;
+  width: 492px;
+  height: 196px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.partner__title{
+  margin-bottom: 27px;
+}
+.partner p{
+  letter-spacing: 0.03em;
+}
+.partner-qr{
+  margin-top: 8px;
+  border-bottom: 1px solid #FFFFFF;
+  cursor: pointer;
+}
+.partner-big{
+  width: 100%;
+  height: 336px;
+}
+.partner-big-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.partner-big__title{
+  font-size: 96px;
+  line-height: 80px;
+  margin-bottom: 12px;
+}
+.partner-big__desc{
+  line-height: 140%;
+}
+.modal-qr{
+  display: none;
+}
+.qrcode{
+  height: 669px;
+}
+.qrcode-container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*----Screen 6 End-------*/
