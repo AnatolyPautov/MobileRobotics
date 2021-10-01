@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'AkzidenzGroteskPro-Bold';
+  src:  local('AkzidenzGroteskPro-Bold'),
+      url('./fonts/AkzidenzGroteskPro-MdCn.woff2') format('woff2'),
+      url('./fonts/AkzidenzGroteskPro-MdCn.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+font-family: 'PTMonoRegular';
+src:
+  url('./fonts/PT-Mono_Regular.woff2') format('woff2'),
+  url('./fonts/PT-Mono_Regular.woff') format('woff');
+font-style: normal;
+}
+
+@font-face {
+font-family: 'PTMonoBold';
+src:
+  url('./fonts/PT-Mono_Bold.woff2') format('woff2'),
+  url('./fonts/PT-Mono_Bold.woff') format('woff');
+font-style: normal;
+}
+
 *{padding: 0;margin: 0;border: 0;}
 *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 :focus,:active{outline: none;}
@@ -225,7 +249,20 @@ body p{
   text-transform: uppercase;
   width: 50%;
 }
-
+.arrow-icon{
+  position: relative;
+}
+.arrow-icon::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url(img/arrow-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /*----Screen 1 End-------*/
 
 /*----Screen 2 Start-------*/
@@ -344,9 +381,6 @@ body p{
 .cities{
   padding-bottom: 100px;
 }
-.cities__container{
-
-}
 .city{
   background: rgba(255, 255, 255, 0.12);
   margin-bottom: 20px;
@@ -380,12 +414,6 @@ body p{
   overflow: hidden;
   transition: 0.5s;
   cursor: pointer;
-}
-.city-active{
-  
-}
-.city__item.city-active .city__contestants{
-
 }
 .city__item.city-active::after {
   content: '-';
