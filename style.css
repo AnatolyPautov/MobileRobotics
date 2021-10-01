@@ -103,9 +103,6 @@ body p{
 
 /*----Modal Styles Start-------*/
 
-.modal-map{
-  display: none;
-}
 .modal-bg{
   position: fixed;
   content: '';
@@ -114,23 +111,12 @@ body p{
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: flex-start;
+  display: none;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
   overflow-y: auto;
   z-index: 99;
-}
-.modal-wrapper{
-  flex-shrink: 0;
-  flex-grow: 0;
-  width: 100%;
-  min-height: 100%;
-  margin: auto;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
 }
 .modal-map-container{
   box-sizing: border-box;
@@ -141,12 +127,22 @@ body p{
   display: flex;
   flex-direction: column;
 }
-.map{
+.modal{
   height: 669px;
-  background-image: url(./img/map.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  position: relative;
+}
+.modal h3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42px;
+}
+.modal__block{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .close{
   position: absolute;
@@ -164,7 +160,7 @@ body p{
   z-index: 100;
 }
 .active{
-  display: block !important;
+  display: flex !important;
 }
 .lock{
   overflow: hidden;
@@ -678,14 +674,5 @@ body p{
 }
 .modal-qr{
   display: none;
-}
-.qrcode{
-  height: 669px;
-}
-.qrcode-container{
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 /*----Screen 6 End-------*/

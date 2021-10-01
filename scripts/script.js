@@ -4,7 +4,7 @@ const bodyLock = document.querySelector('body');
 
 (function () {
     const open = document.querySelector('.map-btn');
-    const modal = document.querySelector('.modal-map');
+    const modal = document.querySelector('.modal-bg');
     const closeMap = document.getElementById('close-map');
     
     open.addEventListener('click', () => {
