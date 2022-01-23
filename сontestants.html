@@ -1,429 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Конкурсанты</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Конкурсанты</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-</head>
-
-<body>
-
-  <div class="modal-bg">
-    <div class="modal-map-container">
-      <button id='close-map' class="close">
-        <img src="./img/close-icon.svg" alt="close">
-      </button>
-      <div class="modal">
-        <h3 class="title-3">Экспо-2021</h3>
-        <div class="modal__block">
-          <img src="img/map.png" alt="карта">
+  <body>
+    <div class="modal-bg">
+      <div class="modal-map-container">
+        <button id="close-map" class="close">
+          <img src="./img/close-icon.svg" alt="close" />
+        </button>
+        <div class="modal">
+          <h3 class="title-3">Экспо-2021</h3>
+          <div class="modal__block">
+            <img src="img/map.png" alt="карта" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-
-  <div class="modal-bg modal-contestants">
-
-    <div class="contestants-swiper swiper">
-      <button id='close-contestants' class="close close-right">
-        <img src="img/close-icon.svg" alt="close">
-      </button>
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide modal-contestant-container">
-          <div class="contestant__info">
-            <div>
-              <h3 class="title-3 contestant__info-title">Иванова татьяна николаевна</h3>
-              <p class="contestant__info-city">Санкт-Петербург</p>
-              <p class="contestant__info-age">25 лет</p>
-              <p>Санкт-Петербургский государственный университет</p>
+    <div class="modal-bg modal-contestants">
+      <div class="contestants-swiper swiper">
+        <button id="close-contestants" class="close close-right">
+          <img src="img/close-icon.svg" alt="close" />
+        </button>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide modal-contestant-container">
+            <div class="contestant__info">
+              <div>
+                <h3 class="title-3 contestant__info-title">
+                  Иванова татьяна николаевна
+                </h3>
+                <p class="contestant__info-city">Санкт-Петербург</p>
+                <p class="contestant__info-age">25 лет</p>
+                <p>Санкт-Петербургский государственный университет</p>
+              </div>
+              <img src="./img/contestant-big.png" alt="contestant" />
             </div>
-            <img src="./img/contestant-big.png" alt="contestant">
+            <div class="contestant__block">
+              <h4 class="contestant__block-title">Чемпионаты</h4>
+              <div class="champion">
+                <p>🏆 Кубок мира FIS по горным лыжам</p>
+              </div>
+              <div class="champion">
+                <p>🏆 World Baseball Classic</p>
+                <div class="champion__top">топ 3</div>
+              </div>
+              <div class="champion">
+                <p>🏆 ICC T20 World Cup</p>
+              </div>
+            </div>
+            <div class="contestant__block">
+              <h4 class="contestant__block-title">Награды</h4>
+              <div class="champion">
+                <p>🥇 Приз зрительских симпатий, Токио, 2019</p>
+              </div>
+              <div class="champion">
+                <p>🥇 Best Drunk Party Friend, USA, 2018</p>
+              </div>
+            </div>
           </div>
-          <div class="contestant__block">
-            <h4 class="contestant__block-title">Чемпионаты</h4>
-            <div class="champion">
-              <p>🏆 Кубок мира FIS по горным лыжам</p>
+
+          <div class="swiper-slide modal-contestant-container">
+            <div class="contestant__info">
+              <div>
+                <h3 class="title-3 contestant__info-title">
+                  Иванова татьяна николаевна
+                </h3>
+                <p class="contestant__info-city">Санкт-Петербург</p>
+                <p class="contestant__info-age">25 лет</p>
+                <p>Санкт-Петербургский государственный университет</p>
+              </div>
+              <img src="./img/contestant-big.png" alt="contestant" />
             </div>
-            <div class="champion">
-              <p>🏆 World Baseball Classic</p>
-              <div class="champion__top">топ 3</div>
+            <div class="contestant__block">
+              <h4 class="contestant__block-title">Чемпионаты</h4>
+              <div class="champion">
+                <p>🏆 Кубок мира FIS по горным лыжам</p>
+              </div>
+              <div class="champion">
+                <p>🏆 World Baseball Classic</p>
+                <div class="champion__top">топ 3</div>
+              </div>
+              <div class="champion">
+                <p>🏆 ICC T20 World Cup</p>
+              </div>
             </div>
-            <div class="champion">
-              <p>🏆 ICC T20 World Cup</p>
+            <div class="contestant__block">
+              <h4 class="contestant__block-title">Награды</h4>
+              <div class="champion">
+                <p>🥇 Приз зрительских симпатий, Токио, 2019</p>
+              </div>
+              <div class="champion">
+                <p>🥇 Best Drunk Party Friend, USA, 2018</p>
+              </div>
             </div>
           </div>
-          <div class="contestant__block">
-            <h4 class="contestant__block-title">Награды</h4>
-            <div class="champion">
-              <p>🥇 Приз зрительских симпатий, Токио, 2019</p>
+
+          <div class="swiper-slide modal-contestant-container">
+            <div class="contestant__info">
+              <div>
+                <h3 class="title-3 contestant__info-title">
+                  Иванова татьяна николаевна
+                </h3>
+                <p class="contestant__info-city">Санкт-Петербург</p>
+                <p class="contestant__info-age">25 лет</p>
+                <p>Санкт-Петербургский государственный университет</p>
+              </div>
+              <img src="./img/contestant-big.png" alt="contestant" />
             </div>
-            <div class="champion">
-              <p>🥇 Best Drunk Party Friend, USA, 2018</p>
+            <div class="contestant__block">
+              <h4 class="contestant__block-title">Чемпионаты</h4>
+              <div class="champion">
+                <p>🏆 Кубок мира FIS по горным лыжам</p>
+              </div>
+              <div class="champion">
+                <p>🏆 World Baseball Classic</p>
+                <div class="champion__top">топ 3</div>
+              </div>
+              <div class="champion">
+                <p>🏆 ICC T20 World Cup</p>
+              </div>
+            </div>
+            <div class="contestant__block">
+              <h4 class="contestant__block-title">Награды</h4>
+              <div class="champion">
+                <p>🥇 Приз зрительских симпатий, Токио, 2019</p>
+              </div>
+              <div class="champion">
+                <p>🥇 Best Drunk Party Friend, USA, 2018</p>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="swiper-slide modal-contestant-container">
-          <div class="contestant__info">
-            <div>
-              <h3 class="title-3 contestant__info-title">Иванова татьяна николаевна</h3>
-              <p class="contestant__info-city">Санкт-Петербург</p>
-              <p class="contestant__info-age">25 лет</p>
-              <p>Санкт-Петербургский государственный университет</p>
-            </div>
-            <img src="./img/contestant-big.png" alt="contestant">
-          </div>
-          <div class="contestant__block">
-            <h4 class="contestant__block-title">Чемпионаты</h4>
-            <div class="champion">
-              <p>🏆 Кубок мира FIS по горным лыжам</p>
-            </div>
-            <div class="champion">
-              <p>🏆 World Baseball Classic</p>
-              <div class="champion__top">топ 3</div>
-            </div>
-            <div class="champion">
-              <p>🏆 ICC T20 World Cup</p>
-            </div>
-          </div>
-          <div class="contestant__block">
-            <h4 class="contestant__block-title">Награды</h4>
-            <div class="champion">
-              <p>🥇 Приз зрительских симпатий, Токио, 2019</p>
-            </div>
-            <div class="champion">
-              <p>🥇 Best Drunk Party Friend, USA, 2018</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide modal-contestant-container">
-          <div class="contestant__info">
-            <div>
-              <h3 class="title-3 contestant__info-title">Иванова татьяна николаевна</h3>
-              <p class="contestant__info-city">Санкт-Петербург</p>
-              <p class="contestant__info-age">25 лет</p>
-              <p>Санкт-Петербургский государственный университет</p>
-            </div>
-            <img src="./img/contestant-big.png" alt="contestant">
-          </div>
-          <div class="contestant__block">
-            <h4 class="contestant__block-title">Чемпионаты</h4>
-            <div class="champion">
-              <p>🏆 Кубок мира FIS по горным лыжам</p>
-            </div>
-            <div class="champion">
-              <p>🏆 World Baseball Classic</p>
-              <div class="champion__top">топ 3</div>
-            </div>
-            <div class="champion">
-              <p>🏆 ICC T20 World Cup</p>
-            </div>
-          </div>
-          <div class="contestant__block">
-            <h4 class="contestant__block-title">Награды</h4>
-            <div class="champion">
-              <p>🥇 Приз зрительских симпатий, Токио, 2019</p>
-            </div>
-            <div class="champion">
-              <p>🥇 Best Drunk Party Friend, USA, 2018</p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
 
-  </div>
-
-  <div class="wrapper">
-    <div class="container">
-      <header class="space-between">
-        <a href="./index.html" class="back">
-          <img src="./img/back-icon.svg" alt="back">
-          <span>назад</span>
-        </a>
-        <button class="map-btn">карта выставки</button>
-      </header>
-      <div class="task">
-        <h2 class="subtitle width-text">Конкурсанты</h2>
+    <div class="wrapper">
+      <div class="container">
+        <header class="space-between">
+          <a href="./index.html" class="back">
+            <img src="./img/back-icon.svg" alt="back" />
+            <span>назад</span>
+          </a>
+          <button class="map-btn">карта выставки</button>
+        </header>
+        <div class="task">
+          <h2 class="subtitle width-text">Конкурсанты</h2>
+        </div>
+        <section class="cities">
+          <ul>
+            <li class="city">
+              <div class="city__item">
+                <img src="./img/emblem-1-min.jpg" alt="" />
+                <h3 class="title-3 city__item-title">Mосква</h3>
+              </div>
+              <div class="city__contestants">
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/kazakh.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Прокопенко семен александрович</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/dewushka.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/chelouwek.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+              </div>
+            </li>
+            <li class="city">
+              <div class="city__item">
+                <img src="./img/emblem-1-min.jpg" alt="" />
+                <h3 class="title-3 city__item-title">Mосква</h3>
+              </div>
+              <div class="city__contestants">
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/kazakh.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Прокопенко семен александрович</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/dewushka.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/chelouwek.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+              </div>
+            </li>
+            <li class="city">
+              <div class="city__item">
+                <img src="./img/emblem-1-min.jpg" alt="" />
+                <h3 class="title-3 city__item-title">Mосква</h3>
+              </div>
+              <div class="city__contestants">
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/kazakh.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Прокопенко семен александрович</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/dewushka.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/chelouwek.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+              </div>
+            </li>
+            <li class="city">
+              <div class="city__item">
+                <img src="./img/emblem-1-min.jpg" alt="" />
+                <h3 class="title-3 city__item-title">Mосква</h3>
+              </div>
+              <div class="city__contestants">
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/kazakh.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Прокопенко семен александрович</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/dewushka.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/chelouwek.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+              </div>
+            </li>
+            <li class="city">
+              <div class="city__item">
+                <img src="./img/emblem-1-min.jpg" alt="" />
+                <h3 class="title-3 city__item-title">Mосква</h3>
+              </div>
+              <div class="city__contestants">
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/kazakh.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Прокопенко семен александрович</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/dewushka.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/chelouwek.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+              </div>
+            </li>
+            <li class="city">
+              <div class="city__item">
+                <img src="./img/emblem-1-min.jpg" alt="" />
+                <h3 class="title-3 city__item-title">Mосква</h3>
+              </div>
+              <div class="city__contestants">
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/kazakh.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Прокопенко семен александрович</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/dewushka.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/chelouwek.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+              </div>
+            </li>
+            <li class="city">
+              <div class="city__item">
+                <img src="./img/emblem-1-min.jpg" alt="" />
+                <h3 class="title-3 city__item-title">Mосква</h3>
+              </div>
+              <div class="city__contestants">
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/kazakh.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Прокопенко семен александрович</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/dewushka.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/chelouwek.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+              </div>
+            </li>
+            <li class="city">
+              <div class="city__item">
+                <img src="./img/emblem-1-min.jpg" alt="" />
+                <h3 class="title-3 city__item-title">Mосква</h3>
+              </div>
+              <div class="city__contestants">
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/kazakh.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Прокопенко семен александрович</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/dewushka.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/chelouwek.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+              </div>
+            </li>
+            <li class="city">
+              <div class="city__item">
+                <img src="./img/emblem-1-min.jpg" alt="" />
+                <h3 class="title-3 city__item-title">Mосква</h3>
+              </div>
+              <div class="city__contestants">
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/kazakh.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Прокопенко семен александрович</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/dewushka.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/chelouwek.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+              </div>
+            </li>
+            <li class="city">
+              <div class="city__item">
+                <img src="./img/emblem-1-min.jpg" alt="" />
+                <h3 class="title-3 city__item-title">Mосква</h3>
+              </div>
+              <div class="city__contestants">
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/kazakh.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Прокопенко семен александрович</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/dewushka.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+                <div class="contestant">
+                  <div class="contestant__avatar">
+                    <img src="./img/chelouwek.png" alt="" />
+                  </div>
+                  <p class="contestant__name">Иванова татьяна николаевна</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
       </div>
-      <section class="cities">
-        <ul>
-          <li class="city">
-            <div class="city__item">
-              <img src="./img/emblem-1-min.jpg" alt="">
-              <h3 class="title-3 city__item-title">Mосква</h3>
-            </div>
-            <div class="city__contestants">
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/kazakh.png" alt="">
-                </div>
-                <p class="contestant__name">Прокопенко семен александрович</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/dewushka.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/chelouwek.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-            </div>
-          </li>
-          <li class="city">
-            <div class="city__item">
-              <img src="./img/emblem-1-min.jpg" alt="">
-              <h3 class="title-3 city__item-title">Mосква</h3>
-            </div>
-            <div class="city__contestants">
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/kazakh.png" alt="">
-                </div>
-                <p class="contestant__name">Прокопенко семен александрович</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/dewushka.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/chelouwek.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-            </div>
-          </li>
-          <li class="city">
-            <div class="city__item">
-              <img src="./img/emblem-1-min.jpg" alt="">
-              <h3 class="title-3 city__item-title">Mосква</h3>
-            </div>
-            <div class="city__contestants">
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/kazakh.png" alt="">
-                </div>
-                <p class="contestant__name">Прокопенко семен александрович</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/dewushka.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/chelouwek.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-            </div>
-          </li>
-          <li class="city">
-            <div class="city__item">
-              <img src="./img/emblem-1-min.jpg" alt="">
-              <h3 class="title-3 city__item-title">Mосква</h3>
-            </div>
-            <div class="city__contestants">
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/kazakh.png" alt="">
-                </div>
-                <p class="contestant__name">Прокопенко семен александрович</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/dewushka.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/chelouwek.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-            </div>
-          </li>
-          <li class="city">
-            <div class="city__item">
-              <img src="./img/emblem-1-min.jpg" alt="">
-              <h3 class="title-3 city__item-title">Mосква</h3>
-            </div>
-            <div class="city__contestants">
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/kazakh.png" alt="">
-                </div>
-                <p class="contestant__name">Прокопенко семен александрович</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/dewushka.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/chelouwek.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-            </div>
-          </li>
-          <li class="city">
-            <div class="city__item">
-              <img src="./img/emblem-1-min.jpg" alt="">
-              <h3 class="title-3 city__item-title">Mосква</h3>
-            </div>
-            <div class="city__contestants">
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/kazakh.png" alt="">
-                </div>
-                <p class="contestant__name">Прокопенко семен александрович</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/dewushka.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/chelouwek.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-            </div>
-          </li>
-          <li class="city">
-            <div class="city__item">
-              <img src="./img/emblem-1-min.jpg" alt="">
-              <h3 class="title-3 city__item-title">Mосква</h3>
-            </div>
-            <div class="city__contestants">
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/kazakh.png" alt="">
-                </div>
-                <p class="contestant__name">Прокопенко семен александрович</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/dewushka.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/chelouwek.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-            </div>
-          </li>
-          <li class="city">
-            <div class="city__item">
-              <img src="./img/emblem-1-min.jpg" alt="">
-              <h3 class="title-3 city__item-title">Mосква</h3>
-            </div>
-            <div class="city__contestants">
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/kazakh.png" alt="">
-                </div>
-                <p class="contestant__name">Прокопенко семен александрович</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/dewushka.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/chelouwek.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-            </div>
-          </li>
-          <li class="city">
-            <div class="city__item">
-              <img src="./img/emblem-1-min.jpg" alt="">
-              <h3 class="title-3 city__item-title">Mосква</h3>
-            </div>
-            <div class="city__contestants">
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/kazakh.png" alt="">
-                </div>
-                <p class="contestant__name">Прокопенко семен александрович</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/dewushka.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/chelouwek.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-            </div>
-          </li>
-          <li class="city">
-            <div class="city__item">
-              <img src="./img/emblem-1-min.jpg" alt="">
-              <h3 class="title-3 city__item-title">Mосква</h3>
-            </div>
-            <div class="city__contestants">
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/kazakh.png" alt="">
-                </div>
-                <p class="contestant__name">Прокопенко семен александрович</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/dewushka.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-              <div class="contestant">
-                <div class="contestant__avatar">
-                  <img src="./img/chelouwek.png" alt="">
-                </div>
-                <p class="contestant__name">Иванова татьяна николаевна</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
     </div>
-  </div>
-</body>
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script src="scripts/contestantsSwiper.js"></script>
-<script src="scripts/modalContestants.js"></script>
-<script src="scripts/script.js"></script>
-
+  </body>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="scripts/contestantsSwiper.js"></script>
+  <script src="scripts/modalContestants.js"></script>
+  <script src="scripts/script.js"></script>
 </html>
