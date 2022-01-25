@@ -20,10 +20,8 @@ const bodyLock = document.querySelector("body");
 /*accordion*/
 
 const cityBlock = document.getElementsByClassName("city__item");
-console.log(cityBlock);
 for (i = 0; i < cityBlock.length; i++) {
   cityBlock[i].addEventListener("click", function () {
-    console.log("sdfsdf");
     this.classList.toggle("city-active");
     let answer = this.nextElementSibling;
     if (answer.style.maxHeight) {

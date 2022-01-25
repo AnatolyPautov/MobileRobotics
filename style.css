@@ -793,7 +793,7 @@ body p {
 .lyceum_slide div p {
   font-weight: 500;
   font-size: 26px;
-  line-height: 100%;
+  line-height: 137%;
 }
 .lyceum_slide:first-child {
   margin-left: 32px;
@@ -824,6 +824,10 @@ body p {
 }
 
 /*----lyceum Screen 1 tab 1 Start-------*/
+.font_inter {
+  font-family: "Inter", sans-serif;
+  text-transform: none;
+}
 
 .lyceum__button {
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -1026,6 +1030,286 @@ body p {
   line-height: 16px;
   color: rgba(255, 255, 255, 0.4);
 }
-/*----lyceum Screen 1 tab 3 End-------*/
 
 /*----lyceum Screen 1 End-------*/
+
+/*----News Details Start-------*/
+
+.news_swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.news_slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.news_wrapper {
+  width: 492px;
+  padding-top: 48px;
+}
+.news_slide h2 {
+  margin-top: 60px;
+  font-size: 30px;
+  line-height: 130%;
+}
+.news_slide p {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 150%;
+}
+.news__pagination-block {
+  position: absolute;
+  top: 425px;
+  left: 50px;
+  height: 130px;
+  width: 175px;
+}
+.news__pagination-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.news__buttons-contsainer {
+  height: 42px;
+  width: 100%;
+  position: relative;
+}
+.news__button {
+  top: auto !important;
+  bottom: 0 !important;
+  width: 55px !important;
+  height: 42px !important;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.news__button::after {
+  display: none;
+}
+.news__button:first-child {
+  left: 0 !important;
+  z-index: 99;
+}
+.news__button:last-child {
+  right: 0 !important;
+}
+.news__button:last-child img {
+  transform: rotate(180deg);
+}
+.news__pagination {
+  bottom: 5px !important;
+}
+.news__close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 99;
+}
+.news__close-button img {
+  margin-right: 13px;
+}
+.news__line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+/*----News Details End-------*/
+
+/*----Lesson Shedule Start-------*/
+
+.lesson__wrapper {
+  padding: 34px 32px;
+}
+.lesson__title {
+  font-size: 160px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  margin-bottom: 200px;
+}
+.lesson__back {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.lesson__back-icon {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+.lessons__header {
+  margin-top: 24px;
+  height: 60px;
+  background: #2e2e2e;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+.lessons__header-title {
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+  width: 20%;
+}
+.lessons__header-title:nth-child(4) {
+  width: 40%;
+}
+.lessons__body {
+  height: 60px;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.lessons__body-item {
+  font-size: 18px;
+  line-height: 24px;
+  width: 20%;
+  color: rgba(255, 255, 255, 0.87);
+}
+.lessons__body-item:nth-child(4) {
+  width: 40%;
+}
+/*----Lesson Shedule End-------*/
+
+/*----Teacher Details Start-------*/
+
+.teacher_slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.teacher_wrapper {
+  width: 754px;
+  padding-top: 48px;
+  padding-right: 32px;
+}
+.teacher__person {
+  display: flex;
+  align-items: center;
+  margin-bottom: 37px;
+}
+.teacher__avatar-img {
+  width: 176px;
+  height: 176px;
+  margin-right: 32px;
+}
+.teacher__logo-text {
+  width: 70%;
+}
+.teacher__logo-name {
+  font-size: 26px;
+  line-height: 137%;
+}
+.teacher__logo-profession {
+  font-size: 18px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 0.4);
+}
+.teacher__experience {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+.teacher__experience-max {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.teacher__progress {
+  width: 100%;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.87);
+  margin-bottom: 66px;
+}
+.teacher__bar {
+  width: 1%;
+  height: 24px;
+  background: #0ab77f;
+}
+.teacher__lesson {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #58585d;
+  border-bottom: 1px solid #58585d;
+  margin-top: 26px;
+  margin-bottom: 58px;
+}
+.teacher__lesson-text {
+  margin-left: 19px;
+}
+.teacher__qualification {
+  border-top: 1px solid #58585d;
+  border-bottom: 1px solid #58585d;
+  padding: 15px 0;
+  margin-top: 26px;
+}
+.teacher__qualification-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.teacher__lesson-time {
+  font-size: 18px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.4);
+}
+.teacher__subtitle {
+  text-transform: uppercase;
+}
+/*----Teacher Details End-------*/
+
+/*----Lyceum Form Start-------*/
+
+.lyceum__form-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lyceum__form {
+  width: 424px;
+  display: flex;
+  flex-direction: column;
+}
+.lyceum__form-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.87);
+  margin-bottom: 12px;
+}
+.lyceum__form-input {
+  height: 46px;
+  background-color: transparent;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 55px;
+  font-size: 18px;
+  line-height: 16px;
+  color: white;
+}
+.lyceum__form-button {
+  height: 46px;
+  background: #308bf4;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.87);
+}
+/*----Lyceum Form End-------*/

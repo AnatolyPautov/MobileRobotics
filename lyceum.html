@@ -10,32 +10,67 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body>
+  <body id="lyceum_body" class="font_inter">
+    <div class="modal-bg">
+      <div class="modal-map-container">
+        <button id="close-form" class="close">
+          <img src="./img/close-icon.svg" alt="close" />
+        </button>
+        <div class="modal">
+          <div class="lyceum__form-container">
+            <form class="lyceum__form">
+              <p class="lyceum__form-text">Напишите ваше имя</p>
+              <input
+                class="lyceum__form-input"
+                type="text"
+                placeholder="Напишите имя"
+              />
+              <p class="lyceum__form-text">Укажите вашу почту</p>
+              <input
+                class="lyceum__form-input"
+                type="email"
+                placeholder="Укажите почту"
+              />
+              <button class="lyceum__form-button" type="submit">
+                Отправить заявку
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="wrapper">
       <main>
         <section class="lyceum__news">
           <div class="swiper lyceum_swiper">
             <div class="swiper-wrapper">
-              <div class="lyceum_slide swiper-slide">
+              <a href="newsDetails.html#1" class="lyceum_slide swiper-slide">
                 <div>
                   <p>Региональный чемпионат WorldSkills</p>
                 </div>
                 <img src="./lyceumImg/newsItem1.jpg" alt="championship" />
-              </div>
-              <div class="lyceum_slide swiper-slide">
+              </a>
+              <a href="newsDetails.html#2" class="lyceum_slide swiper-slide">
                 <div>
                   <p>Региональный чемпионат WorldSkills</p>
                 </div>
                 <img src="./lyceumImg/newsItem2.jpg" alt="smm" />
-              </div>
-              <div class="lyceum_slide swiper-slide">
+              </a>
+              <a href="newsDetails.html#3" class="lyceum_slide swiper-slide">
                 <div>
                   <p>Региональный чемпионат WorldSkills</p>
                 </div>
                 <img src="./lyceumImg/newsItem1.jpg" alt="championship" />
-              </div>
+              </a>
             </div>
           </div>
         </section>
@@ -51,12 +86,10 @@
                     <li class="classes">
                       <div class="classes__item">
                         <div class="classes__name">
-                          <h3 class="title-3 classes__title">8 класс</h3>
+                          <h3 class="classes__title">8 класс</h3>
                         </div>
                         <div class="classes__body">
-                          <p class="title-3 classes__title">
-                            Расписание уроков
-                          </p>
+                          <p class="classes__title">Расписание от 1.09.2021</p>
                         </div>
                       </div>
                       <div class="classes__schedules">
@@ -65,39 +98,20 @@
                             <img src="./lyceumImg/groupIcon.svg" alt="droup" />
                             <p>8A</p>
                           </div>
-                          <button class="lyceum__button">
+                          <a href="lessonSchedule.html" class="lyceum__button">
                             Открыть расписание
-                          </button>
-                        </div>
-                        <div class="classes__schedule">
-                          <div class="classes__schedule-group">
-                            <img src="./lyceumImg/groupIcon.svg" alt="droup" />
-                            <p>8A</p>
-                          </div>
-                          <button class="lyceum__button">
-                            Открыть расписание
-                          </button>
-                        </div>
-                        <div class="classes__schedule">
-                          <div class="classes__schedule-group">
-                            <img src="./lyceumImg/groupIcon.svg" alt="droup" />
-                            <p>8A</p>
-                          </div>
-                          <button class="lyceum__button">
-                            Открыть расписание
-                          </button>
+                          </a>
                         </div>
                       </div>
                     </li>
+
                     <li class="classes">
                       <div class="classes__item">
                         <div class="classes__name">
-                          <h3 class="title-3 classes__title">8 класс</h3>
+                          <h3 class="classes__title">8 класс</h3>
                         </div>
                         <div class="classes__body">
-                          <p class="title-3 classes__title">
-                            Расписание уроков
-                          </p>
+                          <p class="classes__title">Расписание от 1.09.2021</p>
                         </div>
                       </div>
                       <div class="classes__schedules">
@@ -106,39 +120,20 @@
                             <img src="./lyceumImg/groupIcon.svg" alt="droup" />
                             <p>8A</p>
                           </div>
-                          <button class="lyceum__button">
+                          <a href="lessonSchedule.html" class="lyceum__button">
                             Открыть расписание
-                          </button>
-                        </div>
-                        <div class="classes__schedule">
-                          <div class="classes__schedule-group">
-                            <img src="./lyceumImg/groupIcon.svg" alt="droup" />
-                            <p>8A</p>
-                          </div>
-                          <button class="lyceum__button">
-                            Открыть расписание
-                          </button>
-                        </div>
-                        <div class="classes__schedule">
-                          <div class="classes__schedule-group">
-                            <img src="./lyceumImg/groupIcon.svg" alt="droup" />
-                            <p>8A</p>
-                          </div>
-                          <button class="lyceum__button">
-                            Открыть расписание
-                          </button>
+                          </a>
                         </div>
                       </div>
                     </li>
+
                     <li class="classes">
                       <div class="classes__item">
                         <div class="classes__name">
-                          <h3 class="title-3 classes__title">8 класс</h3>
+                          <h3 class="classes__title">8 класс</h3>
                         </div>
                         <div class="classes__body">
-                          <p class="title-3 classes__title">
-                            Расписание уроков
-                          </p>
+                          <p class="classes__title">Расписание от 1.09.2021</p>
                         </div>
                       </div>
                       <div class="classes__schedules">
@@ -147,39 +142,20 @@
                             <img src="./lyceumImg/groupIcon.svg" alt="droup" />
                             <p>8A</p>
                           </div>
-                          <button class="lyceum__button">
+                          <a href="lessonSchedule.html" class="lyceum__button">
                             Открыть расписание
-                          </button>
-                        </div>
-                        <div class="classes__schedule">
-                          <div class="classes__schedule-group">
-                            <img src="./lyceumImg/groupIcon.svg" alt="droup" />
-                            <p>8A</p>
-                          </div>
-                          <button class="lyceum__button">
-                            Открыть расписание
-                          </button>
-                        </div>
-                        <div class="classes__schedule">
-                          <div class="classes__schedule-group">
-                            <img src="./lyceumImg/groupIcon.svg" alt="droup" />
-                            <p>8A</p>
-                          </div>
-                          <button class="lyceum__button">
-                            Открыть расписание
-                          </button>
+                          </a>
                         </div>
                       </div>
                     </li>
+
                     <li class="classes">
                       <div class="classes__item">
                         <div class="classes__name">
-                          <h3 class="title-3 classes__title">8 класс</h3>
+                          <h3 class="classes__title">8 класс</h3>
                         </div>
                         <div class="classes__body">
-                          <p class="title-3 classes__title">
-                            Расписание уроков
-                          </p>
+                          <p class="classes__title">Расписание от 1.09.2021</p>
                         </div>
                       </div>
                       <div class="classes__schedules">
@@ -188,27 +164,9 @@
                             <img src="./lyceumImg/groupIcon.svg" alt="droup" />
                             <p>8A</p>
                           </div>
-                          <button class="lyceum__button">
+                          <a href="lessonSchedule.html" class="lyceum__button">
                             Открыть расписание
-                          </button>
-                        </div>
-                        <div class="classes__schedule">
-                          <div class="classes__schedule-group">
-                            <img src="./lyceumImg/groupIcon.svg" alt="droup" />
-                            <p>8A</p>
-                          </div>
-                          <button class="lyceum__button">
-                            Открыть расписание
-                          </button>
-                        </div>
-                        <div class="classes__schedule">
-                          <div class="classes__schedule-group">
-                            <img src="./lyceumImg/groupIcon.svg" alt="droup" />
-                            <p>8A</p>
-                          </div>
-                          <button class="lyceum__button">
-                            Открыть расписание
-                          </button>
+                          </a>
                         </div>
                       </div>
                     </li>
@@ -252,7 +210,9 @@
                           </div>
                         </div>
                         <div class="education__society-item">
-                          <button class="lyceum__button">Записаться</button>
+                          <button class="lyceum__button lyceum__button-form">
+                            Записаться
+                          </button>
                         </div>
                       </li>
                       <li class="education__society">
@@ -270,7 +230,9 @@
                           </div>
                         </div>
                         <div class="education__society-item">
-                          <button class="lyceum__button">Записаться</button>
+                          <button class="lyceum__button lyceum__button-form">
+                            Записаться
+                          </button>
                         </div>
                       </li>
                     </ul>
@@ -294,7 +256,9 @@
                             учитель родного (татарского) языка и литературы
                           </p>
                         </div>
-                        <button class="lyceum__button">Открыть профиль</button>
+                        <a href="teacherDetails.html" class="lyceum__button"
+                          >Открыть профиль</a
+                        >
                       </div>
                     </li>
                     <li class="teacher">
@@ -312,7 +276,9 @@
                             учитель родного (татарского) языка и литературы
                           </p>
                         </div>
-                        <button class="lyceum__button">Открыть профиль</button>
+                        <a href="teacherDetails.html" class="lyceum__button"
+                          >Открыть профиль</a
+                        >
                       </div>
                     </li>
                     <li class="teacher">
@@ -330,7 +296,9 @@
                             учитель родного (татарского) языка и литературы
                           </p>
                         </div>
-                        <button class="lyceum__button">Открыть профиль</button>
+                        <a href="teacherDetails.html" class="lyceum__button"
+                          >Открыть профиль</a
+                        >
                       </div>
                     </li>
                   </ul>
@@ -344,5 +312,4 @@
   </body>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="scripts/lyceumScripts.js"></script>
-  <script src="scripts/script.js"></script>
 </html>
