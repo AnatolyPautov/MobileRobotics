@@ -167,7 +167,6 @@ const bodyLock = document.querySelector("body");
     } else {
       max = +maxYears?.innerHTML * 12 || +maxMonth?.innerHTML;
     }
-    console.log((max / 100) * min + "%");
     teacherBar.style.width = (max / 100) * min + "%";
   });
 })();
