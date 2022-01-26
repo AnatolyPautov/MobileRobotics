@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="font_inter">
+    <div class="wrapper">
+      <div class="swiper news_swiper">
+        <div class="news__pagination-block">
+          <div class="news__pagination-container">
+            <a href="lyceum.html" class="lyceum__button news__close-button">
+              <img src="lyceumImg/close.svg" alt="close" />
+              <p>Закрыть</p>
+            </a>
+            <div class="news__line"></div>
+            <div class="news__buttons-contsainer">
+              <div class="swiper-button-prev news__button">
+                <img src="lyceumImg/arrowSwipe.svg" alt="arrow" />
+              </div>
+              <div class="swiper-pagination news__pagination"></div>
+              <div class="swiper-button-next news__button">
+                <img src="lyceumImg/arrowSwipe.svg" alt="arrow" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="news_slide swiper-slide">
+            <div class="news_wrapper">
+              <img src="./lyceumImg/newsDetail1.jpg" alt="smm" />
+              <h2>Региональный чемпионат WorldSkills</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+                consectetur vitae at iusto! Iusto sapiente velit repellat,
+                repudiandae explicabo voluptatum neque fuga dolores porro magni
+                laudantium voluptates adipisci, cupiditate rem!
+              </p>
+            </div>
+          </div>
+
+          <div class="news_slide swiper-slide">
+            <div class="news_wrapper">
+              <img src="./lyceumImg/newsDetail1.jpg" alt="smm" />
+              <h2>Открыт набор на курсы по маркетингу и SMM</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+                consectetur vitae at iusto! Iusto sapiente velit repellat,
+                repudiandae explicabo voluptatum neque fuga dolores porro magni
+                laudantium voluptates adipisci, cupiditate rem!
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+                consectetur vitae at iusto! Iusto sapiente velit repellat,
+                repudiandae explicabo voluptatum neque fuga dolores porro magni
+                laudantium voluptates adipisci, cupiditate rem!
+              </p>
+            </div>
+          </div>
+
+          <div class="news_slide swiper-slide">
+            <div class="news_wrapper">
+              <img src="./lyceumImg/newsDetail1.jpg" alt="smm" />
+              <h2>
+                Акселераторы SberZ и SberStudent выбрали самые сильные стартапы
+              </h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+                consectetur vitae at iusto! Iusto sapiente velit repellat,
+                repudiandae explicabo voluptatum neque fuga dolores porro magni
+                laudantium voluptates adipisci, cupiditate rem!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
