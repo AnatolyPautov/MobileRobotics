@@ -469,7 +469,7 @@ body p {
   border-left: 1px solid #58585d;
   padding-left: 16px;
 }
-.city__item.city-active::after {
+.city__item.active::after {
   content: "-";
 }
 .city__contestants {
@@ -797,6 +797,12 @@ body p {
 .lyceum_slide:first-child {
   margin-left: 32px;
 }
+.lyceum_pagination-container {
+  width: 100%;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 
 .lyceum_pagination {
   position: relative !important;
@@ -889,7 +895,7 @@ body p {
   padding-left: 14px;
   border-left: 1px solid #58585d;
 }
-.classes__item.classes-active::after {
+.classes__item.active::after {
   content: "-";
 }
 .classes__schedules {
@@ -1310,5 +1316,20 @@ body p {
   font-size: 18px;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.87);
+}
+.lyceum__success-block {
+  width: 323px;
+  height: 120px;
+  border: 1px solid #308bf4;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lyceum__success-block p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 34px;
+  color: #308bf4;
 }
 /*----Lyceum Form End-------*/
